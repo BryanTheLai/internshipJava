@@ -13,28 +13,37 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.0.1+9-29, mixed mode, sharing)
 4.  **Control**: Logic & actions. *Implements application rules.*
 5.  **Boundary**: User interaction. *Handles input/output.*
 
+
 ```
-src/main/java/              (Java code root - package names start here)
-└── main/                   (Standard package folder)
-    └── java/               (Standard package folder - folders=package names)
-        ├── adt/            (Package: `main.java.adt` - **Data Structures**)
-        │   └── ArrayList.java        (Your `ArrayList` - *how it works*)
-        │   └── ListInterface.java    (List ADT Interface - *what a List does*)
-        ├── applicantmanagement/ (Package: `main.java.applicantmanagement` - **Applicants**)
-        │   └── Applicant.java        (Entity: `Applicant` data)
-        │   └── ApplicantController.java (Control: `Applicant` logic)
-        │   └── ApplicantUI.java      (Boundary: `Applicant` UI)
-        ├── jobmanagement/     (Package: `main.java.jobmanagement` - **Jobs**)
-        │   └── Job.java             (Entity: `Job` data)
-        │   └── JobController.java   (Control: `Job` logic)
-        │   └── JobUI.java         (Boundary: `Job` UI)
-        ├── matchingengine/    (Package: `main.java.matchingengine` - **Matching**)
-        │   └── MatchingService.java   (Control: Matching logic)
-        ├── reporting/       (Package: `main.java.reporting` - **Reports**)
-        │   └── ReportGenerator.java   (Control: Report logic)
-        ├── scheduleinterview/ (Package: `main.java.scheduleinterview` - **Interviews**)
-        │   └── InterviewScheduler.java (Control: Interview logic)
-        ├── search/          (Package: `main.java.search` - **Search**)
-        │   └── SearchService.java     (Control: Search logic)
-        └── Main.java         (Program start point)
+src/main/java/              (Java Code Root - Packages start here)
+├── main/                   (Standard Package Folder)
+│   └── java/               (Standard Folder - Folders=Package Names)
+
+│       ├── adt/                 (Package: `main.java.adt` -  [Abstract Data Types])
+│       │   ├── ArrayList.java           (Your ArrayList -  <Implementation Details>)
+│       │   └── ListInterface.java       (List ADT Interface -  <Functionality Definition>)
+
+│       ├── applicantmanagement/ (Package: `main.java.applicantmanagement` -  [Applicant Module])
+│       │   ├── Applicant.java           (Entity: `Applicant` Data)
+│       │   ├── ApplicantController.java (Control: `Applicant` Logic)
+│       │   └── ApplicantUI.java         (Boundary: `Applicant` UI)
+
+│       ├── jobmanagement/       (Package: `main.java.jobmanagement` -  [Job Module])
+│       │   ├── Job.java                 (Entity: `Job` Data)
+│       │   ├── JobController.java       (Control: `Job` Logic)
+│       │   └── JobUI.java               (Boundary: `Job` UI)
+
+│       ├── matchingengine/      (Package: `main.java.matchingengine` -  [Matching Module])
+│       │   └── MatchingService.java     (Control: Matching Logic)
+
+│       ├── reporting/           (Package: `main.java.reporting` -  [Reporting Module])
+│       │   └── ReportGenerator.java     (Control: Report Logic)
+
+│       ├── scheduleinterview/   (Package: `main.java.scheduleinterview` -  [Scheduling Module])
+│       │   └── InterviewScheduler.java  (Control: Interview Logic)
+
+│       ├── search/              (Package: `main.java.search` -  [Search Module])
+│       │   └── SearchService.java       (Control: Search Logic)
+
+│       └── Main.java            (Program Start Point)
 ```
